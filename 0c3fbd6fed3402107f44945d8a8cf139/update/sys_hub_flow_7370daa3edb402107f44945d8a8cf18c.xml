@@ -1,0 +1,2240 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1281000,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>049a0e497743011031e3b3c64b5a9996</copied_from>
+        <copied_from_name>FlowTemplate: Record Trigger</copied_from_name>
+        <description/>
+        <internal_name>new_timesheet_submission</internal_name>
+        <label_cache>[{"name":"Created_1.current.comments","label":"Trigger - Record Created➛TimeSheets2 Record➛Comments","reference":"","reference_display":"Comments","type":"journal_input","base_type":"journal_input","parent_table_name":"x_snc_time_tracker_timesheets2","column_name":"comments"},{"name":"8e10e3c2-9f9c-4a47-a91a-bdca18edab23.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current.opened_by.manager.email","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created_1.current","label":"Trigger - Record Created➛TimeSheets2 Record","reference":"x_snc_time_tracker_timesheets2","reference_display":"TimeSheets2","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master_snapshot>4df49ee7edb402107f44945d8a8cf169</master_snapshot>
+        <name>New Timesheet Submission</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>a9f4dee7edb402107f44945d8a8cf14d</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7370daa3edb402107f44945d8a8cf18c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>New Timesheet Submission</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name>sys_hub_flow_7370daa3edb402107f44945d8a8cf18c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:18</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_time_tracker_timesheets2">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a9f4dee7edb402107f44945d8a8cf14d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:20</sys_updated_on>
+        <table>x_snc_time_tracker_timesheets2</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_on_extended":"false","run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any"}</data>
+        <identifier>7370daa3edb402107f44945d8a8cf18c</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:18</sys_created_on>
+        <sys_id>d6659a2bedb402107f44945d8a8cf1b5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:42:44</sys_updated_on>
+        <trigger display_value="">a9f4dee7edb402107f44945d8a8cf14d</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=7370daa3edb402107f44945d8a8cf18c^sys_idNOT INd6659a2bedb402107f44945d8a8cf1b5"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7370daa3edb402107f44945d8a8cf18c^sys_idNOT INa080daa3edb402107f44945d8a8cf1ce"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:52</sys_created_on>
+        <sys_id>a080daa3edb402107f44945d8a8cf1ce</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:18</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a080daa3edb402107f44945d8a8cf1ce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a080daa3edb402107f44945d8a8cf1ce</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:52</sys_created_on>
+        <sys_id>2080daa3edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 18:44:52</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a080daa3edb402107f44945d8a8cf1ce</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:53</sys_created_on>
+        <sys_id>a080daa3edb402107f44945d8a8cf1e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 18:44:53</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7370daa3edb402107f44945d8a8cf18c^sys_idNOT IN3f70daa3edb402107f44945d8a8cf18c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7370daa3edb402107f44945d8a8cf18c</id>
+        <name>New Timesheet Submission</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:49</sys_created_on>
+        <sys_id>3f70daa3edb402107f44945d8a8cf18c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 18:44:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3f70daa3edb402107f44945d8a8cf18c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7370daa3edb402107f44945d8a8cf18c^sys_idNOT INd480daa3edb402107f44945d8a8cf1c6,dc80daa3edb402107f44945d8a8cf1c9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</model>
+        <model_id>7370daa3edb402107f44945d8a8cf18c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7370daa3edb402107f44945d8a8cf18c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:52</sys_created_on>
+        <sys_id>d480daa3edb402107f44945d8a8cf1c6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d480daa3edb402107f44945d8a8cf1c6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</model>
+        <model_id>7370daa3edb402107f44945d8a8cf18c</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_7370daa3edb402107f44945d8a8cf18c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:52</sys_created_on>
+        <sys_id>dc80daa3edb402107f44945d8a8cf1c9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dc80daa3edb402107f44945d8a8cf1c9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7370daa3edb402107f44945d8a8cf18c^sys_idNOT IN11e41ee7edb402107f44945d8a8cf120,41e41ee7edb402107f44945d8a8cf109,6155d62bedb402107f44945d8a8cf102,91e41ee7edb402107f44945d8a8cf111,c9e4dae7edb402107f44945d8a8cf1f1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to User Letting Them Know The Status of Their Timesheet</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <order>5</order>
+        <parent_ui_id>3dfacaa3-8f1f-4a51-bf8c-cc399da1b413</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>11e41ee7edb402107f44945d8a8cf120</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:21:25</sys_updated_on>
+        <ui_id>17b7ca0c-7702-4fe2-b267-52c402f343d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11e41ee7edb402107f44945d8a8cf120"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11e41ee7edb402107f44945d8a8cf120</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>1de41ee7edb402107f44945d8a8cf122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11e41ee7edb402107f44945d8a8cf120</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>59e41ee7edb402107f44945d8a8cf122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11e41ee7edb402107f44945d8a8cf120</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>dde41ee7edb402107f44945d8a8cf122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>Your Timesheet was not approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11e41ee7edb402107f44945d8a8cf120"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>11e41ee7edb402107f44945d8a8cf120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>9de41ee7edb402107f44945d8a8cf121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;We're sorry, your timesheet was not approved.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Manager Notes:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:130e454a-b3c3-413f-bfa6-3b5c75fbd89f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:130e454a-b3c3-413f-bfa6-3b5c75fbd89f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; TimeSheets2 Record &amp;gt; Comments"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Comments&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_130e454a-b3c3-413f-bfa6-3b5c75fbd89f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please contact your manager for assistance.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>11e41ee7edb402107f44945d8a8cf120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>d5e41ee7edb402107f44945d8a8cf122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>11e41ee7edb402107f44945d8a8cf120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>d9e41ee7edb402107f44945d8a8cf121</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>11e41ee7edb402107f44945d8a8cf120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>51e41ee7edb402107f44945d8a8cf122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>11e41ee7edb402107f44945d8a8cf120</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>15e41ee7edb402107f44945d8a8cf122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=11e41ee7edb402107f44945d8a8cf120"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=11e41ee7edb402107f44945d8a8cf120"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to Manager to Alert Them to the New TImesheet</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>41e41ee7edb402107f44945d8a8cf109</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:21:25</sys_updated_on>
+        <ui_id>9c74e95e-2c09-472b-bd8c-13940f549603</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=41e41ee7edb402107f44945d8a8cf109"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>41e41ee7edb402107f44945d8a8cf109</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>4de41ee7edb402107f44945d8a8cf10b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>41e41ee7edb402107f44945d8a8cf109</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>89e41ee7edb402107f44945d8a8cf10b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=41e41ee7edb402107f44945d8a8cf109"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>41e41ee7edb402107f44945d8a8cf109</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>cde41ee7edb402107f44945d8a8cf10a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:0a1a93d6-d747-4603-8134-6ded3e99c4df}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:0a1a93d6-d747-4603-8134-6ded3e99c4df}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; TimeSheets2 Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0a1a93d6-d747-4603-8134-6ded3e99c4df" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; has submitted a new timesheet. At your earliest convenience, please review the timesheet.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>41e41ee7edb402107f44945d8a8cf109</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>09e41ee7edb402107f44945d8a8cf10b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.name}}has submitted a new timesheet</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>41e41ee7edb402107f44945d8a8cf109</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>0de41ee7edb402107f44945d8a8cf10a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>41e41ee7edb402107f44945d8a8cf109</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>81e41ee7edb402107f44945d8a8cf10b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>41e41ee7edb402107f44945d8a8cf109</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>45e41ee7edb402107f44945d8a8cf10b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=41e41ee7edb402107f44945d8a8cf109"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41e41ee7edb402107f44945d8a8cf109"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to User Stating Timesheet is Approved</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>6155d62bedb402107f44945d8a8cf102</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:21:25</sys_updated_on>
+        <ui_id>812c9e85-5976-4d59-a9c1-ee9da5d918c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6155d62bedb402107f44945d8a8cf102"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6155d62bedb402107f44945d8a8cf102</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>6155d62bedb402107f44945d8a8cf105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <value>Your Timesheet was Approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6155d62bedb402107f44945d8a8cf102</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>ad55d62bedb402107f44945d8a8cf104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6155d62bedb402107f44945d8a8cf102</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>e955d62bedb402107f44945d8a8cf104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <value>&lt;p&gt;Your timesheet was approved. No further action is needed at this time.&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6155d62bedb402107f44945d8a8cf102"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>6155d62bedb402107f44945d8a8cf102</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>2155d62bedb402107f44945d8a8cf104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>6155d62bedb402107f44945d8a8cf102</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>6955d62bedb402107f44945d8a8cf104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>6155d62bedb402107f44945d8a8cf102</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>6d55d62bedb402107f44945d8a8cf103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6155d62bedb402107f44945d8a8cf102</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>e155d62bedb402107f44945d8a8cf104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>6155d62bedb402107f44945d8a8cf102</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:05:58</sys_created_on>
+        <sys_id>a555d62bedb402107f44945d8a8cf104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:05:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6155d62bedb402107f44945d8a8cf102"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6155d62bedb402107f44945d8a8cf102"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask for Manager Approval</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>91e41ee7edb402107f44945d8a8cf111</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:21:25</sys_updated_on>
+        <ui_id>8e10e3c2-9f9c-4a47-a91a-bdca18edab23</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=91e41ee7edb402107f44945d8a8cf111"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>91e41ee7edb402107f44945d8a8cf111</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>19e41ee7edb402107f44945d8a8cf114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>91e41ee7edb402107f44945d8a8cf111</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>55e41ee7edb402107f44945d8a8cf114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>91e41ee7edb402107f44945d8a8cf111</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>91e41ee7edb402107f44945d8a8cf114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>91e41ee7edb402107f44945d8a8cf111</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>dde41ee7edb402107f44945d8a8cf113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=91e41ee7edb402107f44945d8a8cf111"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>91e41ee7edb402107f44945d8a8cf111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>99e41ee7edb402107f44945d8a8cf113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>Approves1#U[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>91e41ee7edb402107f44945d8a8cf111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>9de41ee7edb402107f44945d8a8cf112</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>91e41ee7edb402107f44945d8a8cf111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>d5e41ee7edb402107f44945d8a8cf113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>91e41ee7edb402107f44945d8a8cf111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>51e41ee7edb402107f44945d8a8cf113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>91e41ee7edb402107f44945d8a8cf111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>15e41ee7edb402107f44945d8a8cf113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>91e41ee7edb402107f44945d8a8cf111</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>5de41ee7edb402107f44945d8a8cf113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=91e41ee7edb402107f44945d8a8cf111"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91e41ee7edb402107f44945d8a8cf111"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to Opened By User Indicating Successful Submission</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>c9e4dae7edb402107f44945d8a8cf1f1</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:21:25</sys_updated_on>
+        <ui_id>fe0e7488-a5d2-4357-bb83-5ec80c7326d4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c9e4dae7edb402107f44945d8a8cf1f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c9e4dae7edb402107f44945d8a8cf1f1</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>09e4dae7edb402107f44945d8a8cf1f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>&lt;p&gt;We have successfully recieved your timesheet.&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c9e4dae7edb402107f44945d8a8cf1f1</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>81e4dae7edb402107f44945d8a8cf1f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>Thank you for submitting your timesheet</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c9e4dae7edb402107f44945d8a8cf1f1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>cde4dae7edb402107f44945d8a8cf1f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c9e4dae7edb402107f44945d8a8cf1f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>c9e4dae7edb402107f44945d8a8cf1f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>4de4dae7edb402107f44945d8a8cf1f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>c9e4dae7edb402107f44945d8a8cf1f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>85e4dae7edb402107f44945d8a8cf1f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>c9e4dae7edb402107f44945d8a8cf1f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>85e4dae7edb402107f44945d8a8cf1f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c9e4dae7edb402107f44945d8a8cf1f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>01e4dae7edb402107f44945d8a8cf1f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c9e4dae7edb402107f44945d8a8cf1f1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>c1e4dae7edb402107f44945d8a8cf1f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c9e4dae7edb402107f44945d8a8cf1f1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c9e4dae7edb402107f44945d8a8cf1f1"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7370daa3edb402107f44945d8a8cf18c^sys_idNOT IN59e41ee7edb402107f44945d8a8cf115"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9de41ee7edb402107f44945d8a8cf114</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>59e41ee7edb402107f44945d8a8cf115</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:18</sys_updated_on>
+        <ui_id>3dfacaa3-8f1f-4a51-bf8c-cc399da1b413</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=59e41ee7edb402107f44945d8a8cf115"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>59e41ee7edb402107f44945d8a8cf115</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>95e41ee7edb402107f44945d8a8cf119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <value>Manager Does Not Approve</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=59e41ee7edb402107f44945d8a8cf115"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>59e41ee7edb402107f44945d8a8cf115</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>15e41ee7edb402107f44945d8a8cf119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{8e10e3c2-9f9c-4a47-a91a-bdca18edab23.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>59e41ee7edb402107f44945d8a8cf115</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>51e41ee7edb402107f44945d8a8cf119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=59e41ee7edb402107f44945d8a8cf115"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=59e41ee7edb402107f44945d8a8cf115"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7370daa3edb402107f44945d8a8cf18c^sys_idNOT IN95e41ee7edb402107f44945d8a8cf125,dde41ee7edb402107f44945d8a8cf124"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7370daa3edb402107f44945d8a8cf18c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.comments}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>95e41ee7edb402107f44945d8a8cf125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>130e454a-b3c3-413f-bfa6-3b5c75fbd89f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7370daa3edb402107f44945d8a8cf18c</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:02</sys_created_on>
+        <sys_id>dde41ee7edb402107f44945d8a8cf124</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0a1a93d6-d747-4603-8134-6ded3e99c4df</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7370daa3edb402107f44945d8a8cf18c^sys_idNOT IN9080daa3edb402107f44945d8a8cf1c9,dc80daa3edb402107f44945d8a8cf1cb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7370daa3edb402107f44945d8a8cf18c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:52</sys_created_on>
+        <sys_id>9080daa3edb402107f44945d8a8cf1c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 18:44:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7370daa3edb402107f44945d8a8cf18c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 18:44:52</sys_created_on>
+        <sys_id>dc80daa3edb402107f44945d8a8cf1cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 18:44:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7370daa3edb402107f44945d8a8cf18c"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>049a0e497743011031e3b3c64b5a9996</copied_from>
+        <copied_from_name/>
+        <description/>
+        <internal_name>new_timesheet_submission</internal_name>
+        <label_cache>[{"name":"Created_1.current.comments","label":"Trigger - Record Created➛TimeSheets2 Record➛Comments","reference":"","reference_display":"Comments","type":"journal_input","base_type":"journal_input","parent_table_name":"x_snc_time_tracker_timesheets2","column_name":"comments"},{"name":"8e10e3c2-9f9c-4a47-a91a-bdca18edab23.approval_state","label":"3 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current.opened_by.manager.email","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Manager➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛TimeSheets2 Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created_1.current","label":"Trigger - Record Created➛TimeSheets2 Record","reference":"x_snc_time_tracker_timesheets2","reference_display":"TimeSheets2","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>New Timesheet Submission</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="New Timesheet Submission">7370daa3edb402107f44945d8a8cf18c</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4df49ee7edb402107f44945d8a8cf169</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4df49ee7edb402107f44945d8a8cf169^sys_idNOT IN15f49ee7edb402107f44945d8a8cf1e4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>15f49ee7edb402107f44945d8a8cf1e4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:18</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=15f49ee7edb402107f44945d8a8cf1e4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>15f49ee7edb402107f44945d8a8cf1e4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>11f49ee7edb402107f44945d8a8cf1e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>15f49ee7edb402107f44945d8a8cf1e4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>5df49ee7edb402107f44945d8a8cf1e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4df49ee7edb402107f44945d8a8cf169^sys_idNOT IN89f49ee7edb402107f44945d8a8cf16a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4df49ee7edb402107f44945d8a8cf169</id>
+        <name>New Timesheet Submission</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>89f49ee7edb402107f44945d8a8cf16a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=89f49ee7edb402107f44945d8a8cf16a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4df49ee7edb402107f44945d8a8cf169^sys_idNOT IN49f49ee7edb402107f44945d8a8cf1ab,4df49ee7edb402107f44945d8a8cf16b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</model>
+        <model_id>4df49ee7edb402107f44945d8a8cf169</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4df49ee7edb402107f44945d8a8cf169</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>49f49ee7edb402107f44945d8a8cf1ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=49f49ee7edb402107f44945d8a8cf1ab"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</model>
+        <model_id>4df49ee7edb402107f44945d8a8cf169</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_4df49ee7edb402107f44945d8a8cf169</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>4df49ee7edb402107f44945d8a8cf16b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4df49ee7edb402107f44945d8a8cf16b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4df49ee7edb402107f44945d8a8cf169^sys_idNOT IN19f49ee7edb402107f44945d8a8cf1d7,51f49ee7edb402107f44945d8a8cf1e1,91f49ee7edb402107f44945d8a8cf1cd,a9655a2bedb402107f44945d8a8cf1eb,d9f49ee7edb402107f44945d8a8cf1c3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask for Manager Approval</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>19f49ee7edb402107f44945d8a8cf1d7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <ui_id>8e10e3c2-9f9c-4a47-a91a-bdca18edab23</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=19f49ee7edb402107f44945d8a8cf1d7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>19f49ee7edb402107f44945d8a8cf1d7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>11f49ee7edb402107f44945d8a8cf1da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>19f49ee7edb402107f44945d8a8cf1d7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>59f49ee7edb402107f44945d8a8cf1da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>19f49ee7edb402107f44945d8a8cf1d7</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>95f49ee7edb402107f44945d8a8cf1da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>19f49ee7edb402107f44945d8a8cf1d7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d1f49ee7edb402107f44945d8a8cf1da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=19f49ee7edb402107f44945d8a8cf1d7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>19f49ee7edb402107f44945d8a8cf1d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d9f49ee7edb402107f44945d8a8cf1d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>Approves1#U[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>19f49ee7edb402107f44945d8a8cf1d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>ddf49ee7edb402107f44945d8a8cf1d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>19f49ee7edb402107f44945d8a8cf1d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>19f49ee7edb402107f44945d8a8cf1d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>19f49ee7edb402107f44945d8a8cf1d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>91f49ee7edb402107f44945d8a8cf1d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>19f49ee7edb402107f44945d8a8cf1d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>55f49ee7edb402107f44945d8a8cf1d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>19f49ee7edb402107f44945d8a8cf1d7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>9df49ee7edb402107f44945d8a8cf1d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=19f49ee7edb402107f44945d8a8cf1d7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=19f49ee7edb402107f44945d8a8cf1d7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to User Letting Them Know The Status of Their Timesheet</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <order>5</order>
+        <parent_ui_id>3dfacaa3-8f1f-4a51-bf8c-cc399da1b413</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>51f49ee7edb402107f44945d8a8cf1e1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <ui_id>17b7ca0c-7702-4fe2-b267-52c402f343d3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=51f49ee7edb402107f44945d8a8cf1e1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>51f49ee7edb402107f44945d8a8cf1e1</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>11f49ee7edb402107f44945d8a8cf1e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>Your Timesheet was not approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>51f49ee7edb402107f44945d8a8cf1e1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>5df49ee7edb402107f44945d8a8cf1e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>51f49ee7edb402107f44945d8a8cf1e1</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>99f49ee7edb402107f44945d8a8cf1e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=51f49ee7edb402107f44945d8a8cf1e1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>51f49ee7edb402107f44945d8a8cf1e1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>ddf49ee7edb402107f44945d8a8cf1e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;We're sorry, your timesheet was not approved.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Manager Notes:&amp;nbsp;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:130e454a-b3c3-413f-bfa6-3b5c75fbd89f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:130e454a-b3c3-413f-bfa6-3b5c75fbd89f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; TimeSheets2 Record &amp;gt; Comments"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Comments&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_130e454a-b3c3-413f-bfa6-3b5c75fbd89f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;Please contact your manager for assistance.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>51f49ee7edb402107f44945d8a8cf1e1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>19f49ee7edb402107f44945d8a8cf1e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>51f49ee7edb402107f44945d8a8cf1e1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>1df49ee7edb402107f44945d8a8cf1e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>51f49ee7edb402107f44945d8a8cf1e1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>91f49ee7edb402107f44945d8a8cf1e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>51f49ee7edb402107f44945d8a8cf1e1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>55f49ee7edb402107f44945d8a8cf1e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=51f49ee7edb402107f44945d8a8cf1e1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=51f49ee7edb402107f44945d8a8cf1e1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to Manager to Alert Them to the New TImesheet</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>91f49ee7edb402107f44945d8a8cf1cd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <ui_id>9c74e95e-2c09-472b-bd8c-13940f549603</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=91f49ee7edb402107f44945d8a8cf1cd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>91f49ee7edb402107f44945d8a8cf1cd</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>9df49ee7edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>91f49ee7edb402107f44945d8a8cf1cd</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d9f49ee7edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=91f49ee7edb402107f44945d8a8cf1cd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>91f49ee7edb402107f44945d8a8cf1cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>11f49ee7edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:0a1a93d6-d747-4603-8134-6ded3e99c4df}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:0a1a93d6-d747-4603-8134-6ded3e99c4df}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; TimeSheets2 Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_0a1a93d6-d747-4603-8134-6ded3e99c4df" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; has submitted a new timesheet. At your earliest convenience, please review the timesheet.&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>91f49ee7edb402107f44945d8a8cf1cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>59f49ee7edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.name}}has submitted a new timesheet</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>91f49ee7edb402107f44945d8a8cf1cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>5df49ee7edb402107f44945d8a8cf1ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.manager.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>91f49ee7edb402107f44945d8a8cf1cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d1f49ee7edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>91f49ee7edb402107f44945d8a8cf1cd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>95f49ee7edb402107f44945d8a8cf1cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=91f49ee7edb402107f44945d8a8cf1cd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=91f49ee7edb402107f44945d8a8cf1cd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to User Stating Timesheet is Approved</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>a9655a2bedb402107f44945d8a8cf1eb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <ui_id>812c9e85-5976-4d59-a9c1-ee9da5d918c2</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a9655a2bedb402107f44945d8a8cf1eb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a9655a2bedb402107f44945d8a8cf1eb</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>69655a2bedb402107f44945d8a8cf1ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <value>Your Timesheet was Approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a9655a2bedb402107f44945d8a8cf1eb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>a5655a2bedb402107f44945d8a8cf1ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a9655a2bedb402107f44945d8a8cf1eb</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>e1655a2bedb402107f44945d8a8cf1ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <value>&lt;p&gt;Your timesheet was approved. No further action is needed at this time.&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a9655a2bedb402107f44945d8a8cf1eb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>a9655a2bedb402107f44945d8a8cf1eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>29655a2bedb402107f44945d8a8cf1ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>a9655a2bedb402107f44945d8a8cf1eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>61655a2bedb402107f44945d8a8cf1ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>a9655a2bedb402107f44945d8a8cf1eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>65655a2bedb402107f44945d8a8cf1ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>a9655a2bedb402107f44945d8a8cf1eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>e9655a2bedb402107f44945d8a8cf1ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a9655a2bedb402107f44945d8a8cf1eb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:06:15</sys_created_on>
+        <sys_id>ad655a2bedb402107f44945d8a8cf1ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a9655a2bedb402107f44945d8a8cf1eb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a9655a2bedb402107f44945d8a8cf1eb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment>Send Email to Opened By User Indicating Successful Submission</comment>
+        <display_text/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d9f49ee7edb402107f44945d8a8cf1c3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <ui_id>fe0e7488-a5d2-4357-bb83-5ec80c7326d4</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d9f49ee7edb402107f44945d8a8cf1c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d9f49ee7edb402107f44945d8a8cf1c3</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>15f49ee7edb402107f44945d8a8cf1c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>&lt;p&gt;We have successfully recieved your timesheet.&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d9f49ee7edb402107f44945d8a8cf1c3</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>99f49ee7edb402107f44945d8a8cf1c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>Thank you for submitting your timesheet</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>d9f49ee7edb402107f44945d8a8cf1c3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d5f49ee7edb402107f44945d8a8cf1c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <value>x_snc_time_tracker_timesheets2</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d9f49ee7edb402107f44945d8a8cf1c3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>d9f49ee7edb402107f44945d8a8cf1c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>59f49ee7edb402107f44945d8a8cf1c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>d9f49ee7edb402107f44945d8a8cf1c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>91f49ee7edb402107f44945d8a8cf1c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>d9f49ee7edb402107f44945d8a8cf1c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>95f49ee7edb402107f44945d8a8cf1c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>d9f49ee7edb402107f44945d8a8cf1c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>1df49ee7edb402107f44945d8a8cf1c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>d9f49ee7edb402107f44945d8a8cf1c3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>ddf49ee7edb402107f44945d8a8cf1c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d9f49ee7edb402107f44945d8a8cf1c3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d9f49ee7edb402107f44945d8a8cf1c3"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4df49ee7edb402107f44945d8a8cf169^sys_idNOT INd1f49ee7edb402107f44945d8a8cf1b7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9de41ee7edb402107f44945d8a8cf114</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="New Timesheet Submission">4df49ee7edb402107f44945d8a8cf169</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>d1f49ee7edb402107f44945d8a8cf1b7</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:06:15</sys_updated_on>
+        <ui_id>3dfacaa3-8f1f-4a51-bf8c-cc399da1b413</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d1f49ee7edb402107f44945d8a8cf1b7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d1f49ee7edb402107f44945d8a8cf1b7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>d9f49ee7edb402107f44945d8a8cf1ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:18</sys_updated_on>
+        <value>Manager Does Not Approve</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d1f49ee7edb402107f44945d8a8cf1b7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d1f49ee7edb402107f44945d8a8cf1b7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>59f49ee7edb402107f44945d8a8cf1ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{8e10e3c2-9f9c-4a47-a91a-bdca18edab23.approval_state}}=rejected</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>d1f49ee7edb402107f44945d8a8cf1b7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>95f49ee7edb402107f44945d8a8cf1ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d1f49ee7edb402107f44945d8a8cf1b7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d1f49ee7edb402107f44945d8a8cf1b7"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4df49ee7edb402107f44945d8a8cf169^sys_idNOT IN55f49ee7edb402107f44945d8a8cf1e6,d5f49ee7edb402107f44945d8a8cf1e6"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4df49ee7edb402107f44945d8a8cf169</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>55f49ee7edb402107f44945d8a8cf1e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>0a1a93d6-d747-4603-8134-6ded3e99c4df</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>4df49ee7edb402107f44945d8a8cf169</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.comments}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:19</sys_created_on>
+        <sys_id>d5f49ee7edb402107f44945d8a8cf1e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:19</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>130e454a-b3c3-413f-bfa6-3b5c75fbd89f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4df49ee7edb402107f44945d8a8cf169^sys_idNOT IN41f49ee7edb402107f44945d8a8cf1b0,c9f49ee7edb402107f44945d8a8cf1a7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4df49ee7edb402107f44945d8a8cf169</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>41f49ee7edb402107f44945d8a8cf1b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_4df49ee7edb402107f44945d8a8cf169</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:18</sys_created_on>
+        <sys_id>c9f49ee7edb402107f44945d8a8cf1a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4df49ee7edb402107f44945d8a8cf169"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>7370daa3edb402107f44945d8a8cf18c</sys_id>
+        <latest_snapshot>4df49ee7edb402107f44945d8a8cf169</latest_snapshot>
+        <compiler_build>glide-vancouver-07-06-2023__patch3-10-12-2023_10-22-2023_1904.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=7370daa3edb402107f44945d8a8cf18c^sys_idNOT INf5f4dee7edb402107f44945d8a8cf14f"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f5f4dee7edb402107f44945d8a8cf14f","name":"plan","plan_signature":null}}</plan>
+        <plan_id>7370daa3edb402107f44945d8a8cf18c</plan_id>
+        <snapshot>73d8de2fedb402107f44945d8a8cf177</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:04:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5f4dee7edb402107f44945d8a8cf14f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:04:20</sys_updated_on>
+        <trigger display_value="">a9f4dee7edb402107f44945d8a8cf14d</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=7370daa3edb402107f44945d8a8cf18c"/>
+</record_update>

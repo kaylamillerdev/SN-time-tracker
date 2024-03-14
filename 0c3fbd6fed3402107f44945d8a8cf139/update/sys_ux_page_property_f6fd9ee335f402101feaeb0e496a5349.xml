@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>A default view for Time Tracker generated</description>
+        <name>view</name>
+        <page display_value="Time Tracker">fefd9ee3b6f402102e845f0868004059</page>
+        <required_translations/>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:43:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>f6fd9ee335f402101feaeb0e496a5349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>view</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name>sys_ux_page_property_f6fd9ee335f402101feaeb0e496a5349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:43:45</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_snc_time_tracker.fefd9ee3b6f402102e845f0868004059.root.view</unique_name>
+        <value>workspace-time-tracker-0</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=f6fd9ee335f402101feaeb0e496a5349"/>
+</record_update>

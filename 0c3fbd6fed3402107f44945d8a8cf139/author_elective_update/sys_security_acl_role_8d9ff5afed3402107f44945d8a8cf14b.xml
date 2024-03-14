@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 17:30:54</sys_created_on>
+        <sys_id>8d9ff5afed3402107f44945d8a8cf14b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_time_tracker_timesheets.x_snc_time_tracker.admin</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_security_acl display_value="x_snc_time_tracker_timesheets">819ff5afed3402107f44945d8a8cf149</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8d9ff5afed3402107f44945d8a8cf14b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 17:30:54</sys_updated_on>
+        <sys_user_role display_value="x_snc_time_tracker.admin" name="x_snc_time_tracker.admin">ac3fbd6fed3402107f44945d8a8cf1b6</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</application>
+        <file_path/>
+        <instance_id>af5307eadb7842103f2c8c3b1396198c</instance_id>
+        <instance_name>van-mar-2287-003</instance_name>
+        <name>sys_security_acl_role_8d9ff5afed3402107f44945d8a8cf14b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-03-13 17:30:54</sys_created_on><sys_id>8d9ff5afed3402107f44945d8a8cf14b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_time_tracker_timesheets.x_snc_time_tracker.admin</sys_name><sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package><sys_policy/><sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope><sys_security_acl display_value="x_snc_time_tracker_timesheets">819ff5afed3402107f44945d8a8cf149</sys_security_acl><sys_update_name>sys_security_acl_role_8d9ff5afed3402107f44945d8a8cf14b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-03-13 17:30:54</sys_updated_on><sys_user_role display_value="x_snc_time_tracker.admin" name="x_snc_time_tracker.admin">ac3fbd6fed3402107f44945d8a8cf1b6</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1311046066</payload_hash>
+        <record_name>x_snc_time_tracker_timesheets.x_snc_time_tracker.admin</record_name>
+        <reverted_from/>
+        <source>083fbd6fed3402107f44945d8a8cf163</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 17:30:55</sys_created_on>
+        <sys_id>c19ff5afed3402107f44945d8a8cf14e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18e38ddf89f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 17:30:55</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>099ff5af0a340210c0591d960b80324d</update_guid>
+        <update_guid_history>099ff5af0a340210c0591d960b80324d:-1311046066</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_time_tracker_timesheets.x_snc_time_tracker.admin">ef6ddea3edf402107f44945d8a8cf1dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:41:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0c7853bf93184a89a006faa5375e1e89</sys_id>
+        <sys_metadata>8d9ff5afed3402107f44945d8a8cf14b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_time_tracker_timesheets.x_snc_time_tracker.admin</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_parent display_value="">819ff5afed3402107f44945d8a8cf149</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_scope_delete display_value="">1375e3d46c6d47629d6890c1d6762561</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_8d9ff5afed3402107f44945d8a8cf14b</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_8d9ff5afed3402107f44945d8a8cf14b">c19ff5afed3402107f44945d8a8cf14e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:41:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

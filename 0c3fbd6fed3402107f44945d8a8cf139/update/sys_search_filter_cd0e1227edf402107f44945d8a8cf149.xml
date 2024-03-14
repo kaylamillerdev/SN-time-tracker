@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Time Sheets">4d0e1227edf402107f44945d8a8cf13d</ais_search_source>
+        <label>Time Sheets</label>
+        <name>Time Sheets</name>
+        <order>100</order>
+        <search_context_config display_value="Time Tracker AI Search Configuration">b2fd9ee37ff40210c2e40464cb7ebd51</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:43:54</sys_created_on>
+        <sys_id>cd0e1227edf402107f44945d8a8cf149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Time Sheets</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name>sys_search_filter_cd0e1227edf402107f44945d8a8cf149</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:43:54</sys_updated_on>
+    </sys_search_filter>
+</record_update>

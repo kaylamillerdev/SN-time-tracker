@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_snc_time_tracker.admin" name="x_snc_time_tracker.admin">ac3fbd6fed3402107f44945d8a8cf1b6</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 17:29:14</sys_created_on>
+        <sys_id>2c3fbd6fed3402107f44945d8a8cf1b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ac3fbd6fed3402107f44945d8a8cf1b6</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name>sys_embedded_help_role_2c3fbd6fed3402107f44945d8a8cf1b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 17:29:14</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

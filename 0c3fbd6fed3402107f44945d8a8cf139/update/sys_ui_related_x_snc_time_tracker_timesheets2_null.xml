@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_snc_time_tracker_timesheets2" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Time Sheets - Default view" name="x_snc_time_tracker_timesheets2" related_list="NULL" sys_domain="global" view="Default view">29f89e2fedb402107f44945d8a8cf1ba</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>task.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:21:49</sys_created_on>
+            <sys_id>a9f89e2fedb402107f44945d8a8cf1bb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:21:49</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Time Sheets - Default view" name="x_snc_time_tracker_timesheets2" related_list="NULL" sys_domain="global" view="Default view">29f89e2fedb402107f44945d8a8cf1ba</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_snc_time_tracker_leave_records.timesheet</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:21:49</sys_created_on>
+            <sys_id>a1f89e2fedb402107f44945d8a8cf1bc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:21:49</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Time Sheets - Default view</calculated_name>
+            <filter/>
+            <name>x_snc_time_tracker_timesheets2</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:21:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>29f89e2fedb402107f44945d8a8cf1ba</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>TimeSheets2 - Default view</sys_name>
+            <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+            <sys_update_name>sys_ui_related_x_snc_time_tracker_timesheets2_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:21:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

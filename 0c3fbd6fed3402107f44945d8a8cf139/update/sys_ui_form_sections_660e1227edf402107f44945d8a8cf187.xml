@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="660e1227edf402107f44945d8a8cf187" sys_domain="global" table="x_snc_time_tracker_timesheets2" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:44:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>760e5227edf402107f44945d8a8cf12d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_time_tracker_timesheets2" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">660e1227edf402107f44945d8a8cf187</sys_ui_form>
+            <sys_ui_section caption="Time Sheet" display_value="Time Sheet" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">320e5227edf402107f44945d8a8cf12c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:44:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:44:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b20e5227edf402107f44945d8a8cf133</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_time_tracker_timesheets2" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">660e1227edf402107f44945d8a8cf187</sys_ui_form>
+            <sys_ui_section caption="Hours" display_value="Hours" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">b20e5227edf402107f44945d8a8cf132</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:44:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:44:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b0e5227edf402107f44945d8a8cf136</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_time_tracker_timesheets2" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">660e1227edf402107f44945d8a8cf187</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">4b0e5227edf402107f44945d8a8cf135</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:44:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:44:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c70e5227edf402107f44945d8a8cf177</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_time_tracker_timesheets2" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">660e1227edf402107f44945d8a8cf187</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="x_snc_time_tracker_timesheets2" sys_domain="global" view="32fd9ee310f40210430272463d2d0150">070e5227edf402107f44945d8a8cf138</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:44:02</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_snc_time_tracker_timesheets2</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-03-13 19:44:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>660e1227edf402107f44945d8a8cf187</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_time_tracker_timesheets2</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+            <sys_update_name>sys_ui_form_sections_660e1227edf402107f44945d8a8cf187</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-03-13 19:44:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Workspace Time Tracker 0" name="workspace-time-tracker-0">32fd9ee310f40210430272463d2d0150</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

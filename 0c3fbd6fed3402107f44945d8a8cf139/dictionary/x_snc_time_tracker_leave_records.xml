@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4d469a6bedb402107f44945d8a8cf18f" extends="task" label="Leave Records" max_length="40" name="x_snc_time_tracker_leave_records" type="collection">
+        <element label="Timesheet" max_length="32" name="timesheet" reference="x_snc_time_tracker_timesheets2" type="reference"/>
+    </element>
+</database>

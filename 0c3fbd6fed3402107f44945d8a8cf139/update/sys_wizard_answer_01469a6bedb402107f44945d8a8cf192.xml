@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Leave Records</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Leave Records</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">ef6cba2ab91231107f44ddbd739997a0</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:10:02</sys_created_on>
+        <sys_id>01469a6bedb402107f44945d8a8cf192</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Leave Records</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name>sys_wizard_answer_01469a6bedb402107f44945d8a8cf192</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:10:02</sys_updated_on>
+        <table/>
+        <target_url>x_snc_time_tracker_leave_records.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

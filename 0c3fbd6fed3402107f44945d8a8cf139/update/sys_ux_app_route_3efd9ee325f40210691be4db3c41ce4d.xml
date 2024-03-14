@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Time Tracker App Config">b2fd9ee375f40210b607df309521155a</app_config>
+        <description/>
+        <extension_point/>
+        <fields>sysid</fields>
+        <icon/>
+        <name>Visualization Designer</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>visualization-designer</route_type>
+        <screen_type display_value="Visualization Designer">f6fd9ee359f402105033cf4332ede14f</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-03-13 19:43:46</sys_created_on>
+        <sys_id>3efd9ee325f40210691be4db3c41ce4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Visualization Designer</sys_name>
+        <sys_package display_value="Time Tracker" source="x_snc_time_tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Time Tracker">0c3fbd6fed3402107f44945d8a8cf139</sys_scope>
+        <sys_update_name>sys_ux_app_route_3efd9ee325f40210691be4db3c41ce4d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-03-13 19:43:46</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=3efd9ee325f40210691be4db3c41ce4d"/>
+</record_update>
